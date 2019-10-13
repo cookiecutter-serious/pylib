@@ -30,12 +30,6 @@ setup(
     # Package modules and data
     packages=find_packages('src'),
     package_dir={'': 'src'},
-    # Entries
-    entry_points={
-        'console_scripts': [
-            '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.__main__:main',
-        ],
-    },
     # Requires
     python_requires='>=3.5',
     install_requires=[],
