@@ -1,9 +1,9 @@
-# cookiecutter-serious-pycli
+# cookiecutter-serious-pylib
 
-[![Build Status](https://travis-ci.org/yanqd0/cookiecutter-serious-pycli.svg?branch=master)](https://travis-ci.org/yanqd0/cookiecutter-serious-pycli)
+[![Build Status](https://travis-ci.org/yanqd0/cookiecutter-serious-pylib.svg?branch=master)](https://travis-ci.org/yanqd0/cookiecutter-serious-pylib)
 [![Code style: yapf](https://img.shields.io/badge/code%20style-yapf-blue)](https://github.com/google/yapf)
 
-A python CLI template with `setup.py`, [pytest] and many pytest plugins.
+A python library template with `setup.py`, [pytest] and many pytest plugins.
 
 Now, it supports:
 
@@ -16,10 +16,10 @@ Now, it supports:
     - pylint
     - yapf
     - isort
+    - docstyle
 
 Other features:
 
-- A CLI entry
 - An auto generated version with `git tag`
 - Source code is under `src`, while test code is under `tests` (See [Packaging a python library])
 
@@ -43,10 +43,10 @@ I start this project to prove that Python can also construct a serious maintaina
 A serious python project should start and keep a 100% coverage, at least for unit tests.
 Compilation can prevent syntax or other low level issues, while Python don't have it.
 So without 100% test coverage, you may be suffered.
-Besides, with various linters, the maintainity will be good enough.
+Besides, with various linters, the maintainability will be good enough.
 
 Of course, there will be some costs in your development efficiency.
-But you can trade it with maintainity freely:
+But you can trade it with maintainability freely:
 Deliver functions without tests, than make up afterwards, with a good project structure.
 
 After some time, you can fly again.
@@ -66,9 +66,9 @@ pip install cookiecutter
 Generate a new CookieCutter template layout:
 
 ```sh
-cookiecutter gh:yanqd0/cookiecutter-serious-pycli
+cookiecutter gh:yanqd0/cookiecutter-serious-pylib
 # or
-cookiecutter https://github.com/yanqd0/cookiecutter-serious-pycli.git
+cookiecutter https://github.com/yanqd0/cookiecutter-serious-pylib.git
 ```
 
 After the project is generated, setup the development environment like that:
@@ -77,7 +77,7 @@ After the project is generated, setup the development environment like that:
 cd demo-project
 git init
 git add .
-git cm -m 'Initialize the project with cookiecutter-serious-pycli'
+git cm -m 'Initialize the project with cookiecutter-serious-pylib'
 
 virtualenv -p python3 .env
 . .env/bin/activate
