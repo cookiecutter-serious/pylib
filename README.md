@@ -1,6 +1,6 @@
-# cookiecutter-serious-pylib
+# cookiecutter-serious/pylib
 
-[![Build Status](https://travis-ci.org/yanqd0/cookiecutter-serious-pylib.svg?branch=master)](https://travis-ci.org/yanqd0/cookiecutter-serious-pylib)
+[![Build Status](https://travis-ci.org/cookiecutter-serious/pylib.svg?branch=master)](https://travis-ci.org/cookiecutter-serious/pylib)
 [![Code style: yapf](https://img.shields.io/badge/code%20style-yapf-blue)](https://github.com/google/yapf)
 
 A python library template with `setup.py`, [pytest] and many pytest plugins.
@@ -66,9 +66,9 @@ pip install cookiecutter
 Generate a new CookieCutter template layout:
 
 ```sh
-cookiecutter gh:yanqd0/cookiecutter-serious-pylib
+cookiecutter gh:cookiecutter-serious/pylib
 # or
-cookiecutter https://github.com/yanqd0/cookiecutter-serious-pylib.git
+cookiecutter https://github.com/cookiecutter-serious/pylib.git
 ```
 
 After the project is generated, setup the development environment like that:
@@ -77,7 +77,7 @@ After the project is generated, setup the development environment like that:
 cd demo-project
 git init
 git add .
-git cm -m 'Initialize the project with cookiecutter-serious-pylib'
+git cm -m 'Initialize the project with cookiecutter-serious/pylib'
 
 virtualenv -p python3 .env
 . .env/bin/activate
